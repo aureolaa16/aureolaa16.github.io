@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#Cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+#Pagina de error 404 personalizada
+ErrorDocument 404 /error-404.html
