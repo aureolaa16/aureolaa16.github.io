@@ -1700,7 +1700,6 @@ label{
       outline: none;
     }
 
-
 @media (max-width: 1140px){
     .Header-responsive{
         display: block;
@@ -1714,8 +1713,16 @@ label{
     .Footer-informacion{
         text-align: center;
     }
-
 }
+
+@media (max-width: 1000px){
+
+    .Carrusel-arrow{
+        top: calc( 25% - 1.5rem );
+    }
+    
+}
+
 @media (max-width: 900px){
     .Columnas-apertura{
         grid-template-columns: repeat( 1 , 1fr);
@@ -1753,6 +1760,7 @@ label{
         max-height: calc(1.2em* 3);
         overflow: hidden;
     }
+
 }
 @media (max-width: 700px){
 
@@ -1822,7 +1830,8 @@ label{
         
       }
 
-    .Carrusel-arrow{
+      .Carrusel-arrow{
+
         display: none;
     }
     .Carrusel-slider{
@@ -1844,17 +1853,20 @@ label{
 
 }
 
-@media (max-width: 650px){ç
-                          
+@media (max-width: 650px){
+
+
     .Footer-informacion{
 
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         align-items: center;
+       
     }
 
 }
+
 
 @media (max-width: 350px){
     .Titulo-top{
@@ -1922,6 +1934,10 @@ label{
         overflow: hidden;
     }
 
+    .Carrusel-arrow{
+        top: calc( 35% - 1.5rem );
+    }
+
 }
 
 @media (min-width: 2600px){
@@ -1986,13 +2002,6 @@ label{
         overflow: hidden;
     }
     
-}
-
-@media (max-width: 1000px){
-    .Carrusel-arrow{
-        top: calc( 25% - 1.5rem );
-    }
-
 }
 
 
