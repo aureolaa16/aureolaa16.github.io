@@ -1822,10 +1822,6 @@ label{
         
       }
 
-}
-
-@media (max-width: 650px){
-
     .Carrusel-arrow{
         display: none;
     }
@@ -1845,17 +1841,20 @@ label{
         height: 18.75rem;
         object-fit: cover;
     }
+
+}
+
+@media (max-width: 650px){ç
+                          
     .Footer-informacion{
 
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         align-items: center;
-       
     }
 
 }
-
 
 @media (max-width: 350px){
     .Titulo-top{
@@ -1991,7 +1990,7 @@ label{
 
 @media (max-width: 1000px){
     .Carrusel-arrow{
-        top: calc( 30% - 1.5rem );
+        top: calc( 25% - 1.5rem );
     }
 
 }
