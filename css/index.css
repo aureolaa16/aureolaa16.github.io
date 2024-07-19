@@ -52,11 +52,9 @@ html{
     --fuente-principal: "Bacasime Antique", serif;
     --fuente-secundaria: Verdana, Geneva, Tahoma, sans-serif;
     --font-size-principal: 1.4rem;
-    --color-secundario: grey;
-    --color-terciario: white;
-    --color-modal: #333;
-    --color-hover: grey;
-    --color-navegacion-horizontal: white;
+    --color-secundario: #808080;
+    --color-terciario: #ffffff;
+    --color-cuarto: #333333;
     --subrayado-texto: underline;
     --font-size-navegacion-horizontal: 1.8rem;
     --font-size-encabezados: 3rem;
@@ -102,7 +100,7 @@ html{
 
     position: fixed;
     z-index: 1;
-    background-color: var(--color-navegacion-horizontal);
+    background-color: var(--color-terciario);
 }
 
 .Header-flex{
@@ -119,7 +117,7 @@ html{
 }
 
 .Abrir-svg:hover{
-    color: var(--color-hover);
+    color: var(--color-secundario);
 }
 
 .Redes-flex{
@@ -137,7 +135,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     
 }
 
@@ -149,7 +147,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     
 }
 
@@ -189,7 +187,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     cursor: pointer;
     
 }
@@ -246,7 +244,7 @@ html{
       font-family: var(--fuente-principal);
       font-weight: 600;
       margin-bottom: 1.25rem;
-      color: var(--color-modal);
+      color: var(--color-cuarto);
   }
   
   .Newsletter-descripcion {
@@ -366,7 +364,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     cursor: pointer;
     
 }
@@ -429,7 +427,7 @@ html{
     bottom: 0;
     
     background-color: black;
-    color: var(--color-navegacion-horizontal);
+    color: var(--color-terciario);
     width: 50%;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
 
@@ -509,7 +507,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     
 }
 
@@ -521,7 +519,7 @@ html{
 
     transform: scale(1.2);
     transition: 1s;
-    color: var(--color-hover);
+    color: var(--color-secundario);
     
 }
 
@@ -766,7 +764,7 @@ html{
 
 .Informacion:hover{
 
-    color: var(--color-hover);
+    color: var(--color-secundario);
     
 }
 
@@ -1471,7 +1469,7 @@ label{
 }
 
 .Footer-terms:hover{
-    color: var(--color-hover);
+    color: var(--color-secundario);
 }
 
 /*NAVEGACION RESPONSIVE*/
@@ -1540,7 +1538,7 @@ label{
     bottom: 0;
     
     background-color: black;
-    color: var(--color-navegacion-horizontal);
+    color: var(--color-terciario);
     width: 50%;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
 
@@ -1699,6 +1697,7 @@ label{
     .Input-busqueda-responsive:focus{
       outline: none;
     }
+
 
 @media (max-width: 1140px){
     .Header-responsive{
