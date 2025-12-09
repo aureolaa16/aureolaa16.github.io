@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&Arimo:ital,wght@0,400..700;1,400..700&Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&Hubballi&Josefin+Sans:ital,wght@0,300;1,300&Krona+One&Open+Sans:ital,wght@0,300..800;1,300..800&Bacasime+Antique">
 
-
 <!-- Primary Meta Tags -->
 <meta name="title" content="Motor | Fuera de Serie">
 <meta name="description" content="Descubre los vehículos más exclusivos del mundo. Superdeportivos, clásicos y las últimas novedades del mundo del motor de lujo.">
@@ -28,6 +27,130 @@
 <meta property="twitter:title" content="Motor | Fuera de Serie">
 <meta property="twitter:description" content="Descubre los vehículos más exclusivos del mundo. Superdeportivos, clásicos y las últimas novedades del mundo del motor de lujo.">
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png">
+
+<style>
+    /* Estilos específicos para la sección Motor */
+    .Motor-hero {
+        text-align: center;
+        padding: 4rem 0 3rem 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .Motor-hero h1 {
+        font-family: var(--fuente-principal);
+        font-size: 3.5rem;
+        color: var(--color-cuarto);
+        margin-bottom: 1rem;
+    }
+
+    .Motor-hero p {
+        font-size: 1.125rem;
+        color: var(--color-secundario);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .Motor-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+    }
+
+    .Motor-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .Motor-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Motor-image-placeholder {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-color: #d3d3d3;
+        border-radius: 4px;
+    }
+
+    .Motor-card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .Motor-category {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--color-secundario);
+        font-weight: 500;
+    }
+
+    .Motor-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-cuarto);
+        line-height: 1.4;
+    }
+
+    .Motor-title:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .Motor-description {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .Motor-price {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-cuarto);
+        margin-top: 0.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .Motor-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .Motor-hero h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .Motor-grid {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .Motor-container {
+            padding: 2rem 1.5rem;
+        }
+
+        .Motor-hero {
+            padding: 3rem 1.5rem 2rem 1.5rem;
+        }
+
+        .Motor-hero h1 {
+            font-size: 2rem;
+        }
+
+        .Motor-hero p {
+            font-size: 1rem;
+        }
+    }
+</style>
 
 </head>
 <body>
@@ -220,14 +343,10 @@
             </div>
         </nav>
 
-
         <!--Este es el header responsive-->
 
         <div class="Header-responsive">
             <div class="Flex-responsive">
-
-                <!--Este es el modal de la búsqueda responsive-->
-
 
                 <div class="Lupa-responsive">
                     <button onclick="abrirModalBusquedaResponsive()" title="Buscar">
@@ -343,301 +462,146 @@
     <!--Este es el contenido principal de Motor-->
 
     <main class="Main">
-        <div class="Contenido-wrapper">
+        <!-- Hero Section -->
+        <section class="Motor-hero">
+            <h1>Motor</h1>
+            <p>Descubre los vehículos más exclusivos del mundo, desde superdeportivos hasta clásicos atemporales</p>
+        </section>
 
-            <div class="Bloque-apertura">
-                <div style="text-align: center; padding: 3rem 0;">
-                    <h1 style="font-family: var(--fuente-principal); font-size: 3.5rem; color: var(--color-cuarto); margin-bottom: 1rem;">Motor</h1>
-                    <p style="font-size: 1.25rem; color: var(--color-secundario); max-width: 800px; margin: 0 auto;">Descubre los vehículos más exclusivos del mundo, desde superdeportivos hasta clásicos atemporales</p>
-                </div>
-
-                <div class="Row-apertura">
-                    <div class="Columnas-apertura">
-                        <article class="Row-descripcion">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Superdeportivos</h3>
-                                <a href="#" class="Texto-a" title="Ferrari SF90 Stradale: La nueva era de la electrificación" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Ferrari SF90 Stradale: La nueva era de la electrificación</h2>
-                                    <p class="Entradilla">Con 1.000 CV de potencia, el SF90 Stradale representa el primer superdeportivo híbrido enchufable de serie de Ferrari. Una obra maestra de la ingeniería italiana.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                                <div class="Separador"></div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Ferrari SF90" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/chema.webp" alt="Ferrari SF90" class="Img-row">
-                                    </picture>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="Row-descripcion">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Clásicos</h3>
-                                <a href="#" class="Texto-a" title="Porsche 911: 60 años de una leyenda" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Porsche 911: 60 años de una leyenda</h2>
-                                    <p class="Entradilla">Repasamos la historia del icónico deportivo alemán que ha definido el concepto de excelencia automovilística durante seis décadas.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                                <div class="Separador"></div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Porsche 911" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/benedetta_.webp" alt="Porsche 911" class="Img-row">
-                                    </picture>
-
-                                </a>
-                            </div>
-                        </article>
+        <!-- Grid de productos -->
+        <div class="Motor-container">
+            <div class="Motor-grid">
+                <!-- Card 1 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Superdeportivos</span>
+                        <h2 class="Motor-title">Ferrari SF90 Stradale: La nueva era de la electrificación</h2>
+                        <p class="Motor-description">Con 1.000 CV de potencia, el SF90 Stradale representa el primer superdeportivo híbrido enchufable de serie de Ferrari.</p>
+                        <span class="Motor-price">Desde 625.000€</span>
                     </div>
-                </div>
-                <div class="Row-apertura">
-                    <div class="Columnas-secundaria">
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Exclusivos</h3>
-                                <a href="#" class="Texto-a" title="Rolls-Royce Phantom: El epítome del lujo automotriz" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Rolls-Royce Phantom: El epítome del lujo automotriz</h2>
-                                    <p class="Entradilla">El Phantom representa la máxima expresión del lujo británico sobre ruedas, con acabados artesanales incomparables.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                                <div class="Separador"></div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Rolls-Royce Phantom" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/paredes.webp" alt="Rolls-Royce Phantom" class="Img-row">
-                                    </picture>
+                </article>
 
-                                </a>
-                            </div>
-                        </article>
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Innovación</h3>
-                                <a href="#" class="Texto-a" title="Lamborghini Revuelto: El primer V12 híbrido de la marca" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Lamborghini Revuelto: El primer V12 híbrido de la marca</h2>
-                                    <p class="Entradilla">Con 1.015 CV, el Revuelto marca un hito en la historia de Lamborghini al combinar la potencia de un V12 con tres motores eléctricos.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                                <div class="Separador"></div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Lamborghini Revuelto" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/alicia.webp" alt="Lamborghini Revuelto" class="Img-row">
-                                    </picture>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Diseño</h3>
-                                <a href="#" class="Texto-a" title="Aston Martin DB12: Elegancia británica redefinida" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Aston Martin DB12: Elegancia británica redefinida</h2>
-                                    <p class="Entradilla">El nuevo DB12 establece nuevos estándares de sofisticación y rendimiento en el segmento de los gran turismo de lujo.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                                <div class="Separador"></div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Aston Martin DB12" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/urquiola.webp" alt="Aston Martin DB12" class="Img-row">
-                                    </picture>
+                <!-- Card 2 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Clásicos</span>
+                        <h2 class="Motor-title">Porsche 911: 60 años de una leyenda</h2>
+                        <p class="Motor-description">Repasamos la historia del icónico deportivo alemán que ha definido el concepto de excelencia automovilística.</p>
+                        <span class="Motor-price">Desde 132.000€</span>
+                    </div>
+                </article>
 
-                                </a>
-                            </div>
-                        </article>
+                <!-- Card 3 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Exclusivos</span>
+                        <h2 class="Motor-title">Rolls-Royce Phantom: El epítome del lujo automotriz</h2>
+                        <p class="Motor-description">El Phantom representa la máxima expresión del lujo británico sobre ruedas con acabados artesanales incomparables.</p>
+                        <span class="Motor-price">Desde 520.000€</span>
                     </div>
-                </div>
-                <div class="Row-apertura">
-                    <div class="Columnas-secundaria">
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">SUV de Lujo</h3>
-                                <a href="#" class="Texto-a" title="Bentley Bentayga: Cuando el lujo se eleva" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Bentley Bentayga: Cuando el lujo se eleva</h2>
-                                    <p class="Entradilla">El SUV más lujoso del mundo combina artesanía británica con la versatilidad de un todoterreno de última generación.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Bentley Bentayga" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/bataller.webp" alt="Bentley Bentayga" class="Img-row">
-                                    </picture>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Eléctricos</h3>
-                                <a href="#" class="Texto-a" title="Mercedes-AMG EQS: La berlina eléctrica de alto rendimiento" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Mercedes-AMG EQS: La berlina eléctrica de alto rendimiento</h2>
-                                <p class="Entradilla">AMG lleva su experiencia en alto rendimiento al mundo eléctrico con una berlina que combina lujo, tecnología y prestaciones deportivas.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Mercedes-AMG EQS" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/ferra_adria.webp" alt="Mercedes-AMG EQS" class="Img-row">
-                                    </picture>
+                </article>
 
-                                </a>
-                            </div>
-                        </article>
-                        <article class="Row-descripcion secundaria">
-                            <div class="Row-texto">
-                                <h3 class="Row-h3">Hypercar</h3>
-                                <a href="#" class="Texto-a" title="Bugatti Chiron Super Sport: Velocidad extrema" target="_blank" rel="noreferrer">
-                                    <h2 class="Row-h2">Bugatti Chiron Super Sport: Velocidad extrema</h2>
-                                    <p class="Entradilla">El hypercar francés establece nuevos récords de velocidad con sus 1.600 CV y una velocidad máxima que desafía los límites de la física.</p>
-                                </a>
-                                <div class="Informacion">
-                                    <a href="#" class="Informacion-a" title="Leer más" target="_blank" rel="noreferrer">LEER MÁS</a>
-                                </div>
-                            </div>
-                            <div class="Imagen-row">
-                                <a href="#" class="Img-a" title="Bugatti Chiron" target="_blank" rel="noreferrer">
-                                    <picture>
-                                        <img loading="lazy" src="assets/veronica.webp" alt="Bugatti Chiron" class="Img-row">
-                                    </picture>
-                                </a>
-                            </div>
-                        </article>
+                <!-- Card 4 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Innovación</span>
+                        <h2 class="Motor-title">Lamborghini Revuelto: El primer V12 híbrido de la marca</h2>
+                        <p class="Motor-description">Con 1.015 CV, el Revuelto marca un hito en la historia de Lamborghini al combinar la potencia de un V12.</p>
+                        <span class="Motor-price">Desde 608.358€</span>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="Bloque-carrusel">
-                <section class="Seccion-carrusel">
-                    <h2 class="Seccion-h2">
-                        <span class="Titulo">Últimas Novedades</span>
-                    </h2>
-                    <div class="Carrusel-container">
-                        <ul class="Carrusel-slider">
-                            <li class="Carrusel-li">
-                                <article class="Img-slider">
-                                    <a href="#" class="Slider-a" title="McLaren Artura: El futuro del alto rendimiento" target="_blank" rel="noreferrer">
-                                        <picture>
-                                            <img loading="lazy" src="assets/moda_playa.webp" alt="McLaren Artura" class="Img-slide">
-                                        </picture>
-                                    </a>
-                                    <h3 class="Slider-h3">Superdeportivos</h3>
-                                    <a href="#" class="Slider-a" title="McLaren Artura: El futuro del alto rendimiento" target="_blank" rel="noreferrer">
-                                        <h2 class="Slider-h2">McLaren Artura: El futuro del alto rendimiento</h2>
-                                    </a>
-                                </article>
-                            </li>
-                            <li class="Carrusel-li">
-                                <article class="Img-slider">
-                                    <a href="#" class="Slider-a" title="Pagani Utopia: Arte en movimiento" target="_blank" rel="noreferrer">
-                                        <picture>
-                                            <img loading="lazy" src="assets/luis-voiton-moda.webp" alt="Pagani Utopia" class="Img-slide">
-                                        </picture>
-                                    </a>
-                                    <h3 class="Slider-h3">Exclusivos</h3>
-                                    <a href="#" class="Slider-a" title="Pagani Utopia: Arte en movimiento" target="_blank" rel="noreferrer">
-                                        <h2 class="Slider-h2">Pagani Utopia: Arte en movimiento</h2>
-                                    </a>
-                                </article>
-                            </li>
-                            <li class="Carrusel-li">
-                                <article class="Img-slider">
-                                    <a href="#" class="Slider-a" title="BMW M4 CSL: La esencia M en su máxima expresión" target="_blank" rel="noreferrer">
-                                        <picture>
-                                            <img loading="lazy" src="assets/marta-hazas.webp" alt="BMW M4 CSL" class="Img-slide">
-                                        </picture>
-                                    </a>
-                                    <h3 class="Slider-h3">Deportivos</h3>
-                                    <a href="#" class="Slider-a" title="BMW M4 CSL: La esencia M en su máxima expresión" target="_blank" rel="noreferrer">
-                                        <h2 class="Slider-h2">BMW M4 CSL: La esencia M en su máxima expresión</h2>
-                                    </a>
-                                </article>
-                            </li>
-                            <li class="Carrusel-li">
-                                <article class="Img-slider">
-                                    <a href="#" class="Slider-a" title="Maserati Grecale: El tridente conquista nuevos territorios" target="_blank" rel="noreferrer">
-                                        <picture>
-                                            <img loading="lazy" src="assets/gucci.webp" alt="Maserati Grecale" class="Img-slide">
-                                        </picture>
-                                    </a>
-                                    <h3 class="Slider-h3">SUV</h3>
-                                    <a href="#" class="Slider-a" title="Maserati Grecale: El tridente conquista nuevos territorios" target="_blank" rel="noreferrer">
-                                        <h2 class="Slider-h2">Maserati Grecale: El tridente conquista nuevos territorios</h2>
-                                    </a>
-                                </article>
-                            </li>
-                            <li class="Carrusel-li">
-                                <article class="Img-slider">
-                                    <a href="#" class="Slider-a" title="Lotus Emira: El último canto del motor térmico" target="_blank" rel="noreferrer">
-                                        <picture>
-                                            <img loading="lazy" src="assets/new.webp" alt="Lotus Emira" class="Img-slide">
-                                        </picture>
-                                    </a>
-                                        <h3 class="Slider-h3">Deportivos</h3>
-                                        <a href="#" class="Slider-a" title="Lotus Emira: El último canto del motor térmico" target="_blank" rel="noreferrer">
-                                            <h2 class="Slider-h2">Lotus Emira: El último canto del motor térmico</h2>
-                                        </a>
-                                </article>
-                            </li>
-                        </ul>
-                        <button class="Carrusel-arrow Siguiente" title="Siguiente">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Chevron-right">
-                                <use xlink:href="#siguiente-slider"></use>
-                            </svg>
-                        </button>
-                        <button class="Carrusel-arrow Anterior" title="Anterior">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Chevron-left">
-                                <use xlink:href="#anterior-slider"></use>
-                            </svg>
-                        </button>
+                <!-- Card 5 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Diseño</span>
+                        <h2 class="Motor-title">Aston Martin DB12: Elegancia británica redefinida</h2>
+                        <p class="Motor-description">El nuevo DB12 establece nuevos estándares de sofisticación y rendimiento en los gran turismo de lujo.</p>
+                        <span class="Motor-price">Desde 245.000€</span>
                     </div>
-                </section>
-            </div>
+                </article>
 
-            <div class="Bloque-newsletter">
-                <div class="Seccion-newsletter">
-                    <div class="Formulario">
-                        <div class="Componentes-formulario">
-                            <form action="#" method="post" class="Formulario-form">
-                                <p class="Parrafo-suscribete">Suscríbete a Fuera de Serie</p>
-                                <input type="text" placeholder="Nombre" required>
-                                <input type="email" placeholder="Correo electrónico" required>
-                                <label for="Politica"><input type="checkbox" id="Politica"> He leído y acepto la política de privacidad</label>
-                                <button type="submit" class="Button-newsletter" title="Enviar">Enviar</button>
-                            </form>
-                        </div>
+                <!-- Card 6 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">SUV de Lujo</span>
+                        <h2 class="Motor-title">Bentley Bentayga: Cuando el lujo se eleva</h2>
+                        <p class="Motor-description">El SUV más lujoso del mundo combina artesanía británica con la versatilidad de un todoterreno de última generación.</p>
+                        <span class="Motor-price">Desde 198.000€</span>
                     </div>
-                    <div class="Revista">
-                        <div class="Componentes-revista">
-                            <p class="Parrafo-descarga-titulo">Descárgate nuestra revista digital</p>
-                            <p class="Parrafo-descarga">Cada mes una nueva publicación Fuera de Serie</p>
-                            <div class="Descarga-revista">
-                                <a href="#" class="Descarga-a" title="Descargar revista" target="_blank" rel="noreferrer">
-                                    <img loading="lazy" src="assets/revista_fds.webp" alt="Descargar revista" class="Revista-fds">
-                                </a>
-                            </div>
-                        </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Eléctricos</span>
+                        <h2 class="Motor-title">Mercedes-AMG EQS: La berlina eléctrica de alto rendimiento</h2>
+                        <p class="Motor-description">AMG lleva su experiencia en alto rendimiento al mundo eléctrico con una berlina que combina lujo y tecnología.</p>
+                        <span class="Motor-price">Desde 158.450€</span>
                     </div>
-                </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Hypercar</span>
+                        <h2 class="Motor-title">Bugatti Chiron Super Sport: Velocidad extrema</h2>
+                        <p class="Motor-description">El hypercar francés establece nuevos récords de velocidad con sus 1.600 CV y una velocidad máxima que desafía los límites.</p>
+                        <span class="Motor-price">Desde 3.500.000€</span>
+                    </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Superdeportivos</span>
+                        <h2 class="Motor-title">McLaren Artura: El futuro del alto rendimiento</h2>
+                        <p class="Motor-description">McLaren combina su experiencia en deportivos con tecnología híbrida para crear un superdeportivo único.</p>
+                        <span class="Motor-price">Desde 237.000€</span>
+                    </div>
+                </article>
+
+                <!-- Card 10 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Exclusivos</span>
+                        <h2 class="Motor-title">Pagani Utopia: Arte en movimiento</h2>
+                        <p class="Motor-description">La última creación de Horacio Pagani combina artesanía italiana con ingeniería de vanguardia.</p>
+                        <span class="Motor-price">Desde 2.500.000€</span>
+                    </div>
+                </article>
+
+                <!-- Card 11 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">Deportivos</span>
+                        <h2 class="Motor-title">BMW M4 CSL: La esencia M en su máxima expresión</h2>
+                        <p class="Motor-description">BMW M GmbH presenta su deportivo más radical con mejoras en aerodinámica y reducción de peso.</p>
+                        <span class="Motor-price">Desde 165.000€</span>
+                    </div>
+                </article>
+
+                <!-- Card 12 -->
+                <article class="Motor-card">
+                    <div class="Motor-image-placeholder"></div>
+                    <div class="Motor-card-content">
+                        <span class="Motor-category">SUV</span>
+                        <h2 class="Motor-title">Maserati Grecale: El tridente conquista nuevos territorios</h2>
+                        <p class="Motor-description">El nuevo SUV de Maserati combina elegancia italiana con prestaciones deportivas y tecnología de última generación.</p>
+                        <span class="Motor-price">Desde 74.450€</span>
+                    </div>
+                </article>
             </div>
         </div>
 
@@ -666,14 +630,6 @@
 
             <symbol id="cerrar-menu" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-            </symbol>
-
-            <symbol id="siguiente-slider" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-            </symbol>
-
-            <symbol id="anterior-slider" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
             </symbol>
         </svg>
     </main>
